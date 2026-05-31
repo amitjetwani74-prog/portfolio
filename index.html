@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Kamal Jetwani – Data Science Student, Data Analytics Enthusiast, ML Developer. Portfolio showcasing projects, skills, and experience." />
+    <meta name="keywords" content="Kamal Jetwani, Data Science, Machine Learning, Python, Portfolio, SKIT Jaipur" />
+    <meta name="author" content="Kamal Jetwani" />
+    <meta property="og:title" content="Kamal Jetwani | Data Science Portfolio" />
+    <meta property="og:description"
+        content="Data Science Student & Analytics Enthusiast building intelligent, data-driven solutions." />
+    <meta property="og:type" content="website" />
+    <title>Kamal Jetwani | Data Science Portfolio</title>
+
+    <!-- Google Fonts: Syne (display) + DM Sans (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@300;400&display=swap"
+        rel="stylesheet" />
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <!-- ===================== LOADER ===================== -->
+    <div id="loader" class="loader">
+        <div class="loader__inner">
+            <div class="loader__bar"></div>
+            <span class="loader__text">Loading<span class="loader__dots"></span></span>
+        </div>
+    </div>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <header class="navbar" id="navbar">
+        <div class="container navbar__container">
+            <a href="#hero" class="navbar__logo">KJ<span class="dot">.</span></a>
+
+            <nav class="navbar__links" id="navLinks">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="navbar__actions">
+                <!-- Dark/Light toggle -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="ph ph-sun" id="themeIcon"></i>
+                </button>
+                <!-- Hamburger -->
+                <button class="hamburger" id="hamburger" aria-label="Open menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ===================== HERO ===================== -->
+        <section class="hero" id="hero">
+            <div class="hero__bg-grid"></div>
+            <div class="container hero__container">
+
+                <div class="hero__content" data-aos="fade-right">
+                    <p class="hero__greeting">Hello, I'm</p>
+                    <h1 class="hero__name">Kamal<br />Jetwani</h1>
+                    <div class="hero__title-wrap">
+                        <span class="hero__static">I'm a&nbsp;</span>
+                        <span class="hero__typed" id="typedText"></span>
+                        <span class="hero__cursor">|</span>
+                    </div>
+                    <p class="hero__intro">
+                        A CSE (Data Science) student passionate about turning raw data into meaningful
+                        insights — building ML models, analytics dashboards, and intelligent applications
+                        that solve real-world problems.
+                    </p>
+                    <div class="hero__actions">
+                        <a href="#projects" class="btn btn--primary">
+                            <i class="ph ph-folder-open"></i> View Projects
+                        </a>
+                        <a href="#contact" class="btn btn--outline">
+                            <i class="ph ph-paper-plane-tilt"></i> Contact Me
+                        </a>
+                    </div>
+
+                    <!-- Socials -->
+                    <div class="hero__socials">
+                        <a href="https://github.com/amitjetwani74-prog/" target="_blank" rel="noopener"
+                            aria-label="GitHub">
+                            <i class="ph ph-github-logo"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kamal-jetwani-310bb7397/" target="_blank" rel="noopener"
+                            aria-label="LinkedIn">
+                            <i class="ph ph-linkedin-logo"></i>
+                        </a>
+                        <a href="mailto:kamaljetwani100@gmail.com" aria-label="Email">
+                            <i class="ph ph-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero__image-wrap" data-aos="fade-left">
+                    <div class="hero__image-ring"></div>
+                    <div class="hero__image-blob">
+                        <!-- Profile placeholder SVG -->
+
+                        <img src="images/profile.jpg" alt="Kamal Jetwani" class="hero_avatar">
+
+                    </div>
+                    <!-- Floating stat chips -->
+                    <div class="hero__chip hero__chip--top">
+                        <i class="ph ph-chart-line-up"></i> ML Enthusiast
+                    </div>
+                    <div class="hero__chip hero__chip--bot">
+                        <i class="ph ph-code"></i> Open to Work
+                    </div>
+                </div>
+
+            </div>
+            <!-- Scroll indicator -->
+            <a href="#about" class="hero__scroll">
+                <i class="ph ph-arrow-down"></i>
+            </a>
+        </section>
+
+        <!-- ===================== ABOUT ===================== -->
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="section__header" data-aos="fade-up">
+                    <span class="section__tag">01 / About</span>
+                    <h2 class="section__title">Who I Am</h2>
+                </div>
+                <div class="about__grid">
+                    <div class="about__text" data-aos="fade-right">
+                        <p>
+                            I am a <strong>CSE (Data Science)</strong> student at <strong>SKIT Jaipur</strong> with a
+                            strong
+                            interest in Data Analytics, Machine Learning, and solving real-world problems using
+                            data-driven approaches.
+                        </p>
+                        <p>
+                            Skilled in <strong>Python</strong> and familiar with data analysis, visualization, and
+                            machine
+                            learning concepts through hands-on projects and internships. I enjoy exploring datasets,
+                            finding meaningful insights, and continuously improving my technical skills through
+                            practical learning.
+                        </p>
+                        <p>
+                            Currently focused on strengthening my knowledge in <strong>Data Analytics</strong>,
+                            <strong>Machine Learning</strong>, and modern technologies while building impactful
+                            projects.
+                        </p>
+                        <a href="#contact" class="btn btn--primary" style="margin-top:1.5rem;">
+                            <i class="ph ph-handshake"></i> Let's Connect
+                        </a>
+                    </div>
+                    <div class="about__stats" data-aos="fade-left">
+                        <div class="stat-card">
+                            <span class="stat-card__num">2+</span>
+                            <span class="stat-card__label">Internships</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-card__num">4+</span>
+                            <span class="stat-card__label">Projects Built</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-card__num">18+</span>
+                            <span class="stat-card__label">Tech Skills</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-card__num">2025</span>
+                            <span class="stat-card__label">Batch</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== SKILLS ===================== -->
+        <section class="section skills" id="skills">
+            <div class="container">
+                <div class="section__header" data-aos="fade-up">
+                    <span class="section__tag">02 / Skills</span>
+                    <h2 class="section__title">Technical Toolkit</h2>
+                </div>
+
+                <!-- Category: Core -->
+                <div class="skills__category" data-aos="fade-up">
+                    <h3 class="skills__cat-label"><i class="ph ph-brain"></i> Data Science & ML</h3>
+                    <div class="skills__bars">
+                        <div class="skill-bar" data-skill="Python" data-pct="85">
+                            <div class="skill-bar__header"><span>Python</span><span class="skill-bar__pct">75%</span>
+                            </div>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-skill="Data Analytics" data-pct="80">
+                            <div class="skill-bar__header"><span>Data Analytics</span><span
+                                    class="skill-bar__pct">75%</span></div>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-skill="Machine Learning" data-pct="75">
+                            <div class="skill-bar__header"><span>Machine Learning</span><span
+                                    class="skill-bar__pct">60%</span></div>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-skill="NumPy" data-pct="80">
+                            <div class="skill-bar__header"><span>NumPy</span><span class="skill-bar__pct">70%</span>
+                            </div>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-skill="Pandas" data-pct="80">
+                            <div class="skill-bar__header"><span>Pandas</span><span class="skill-bar__pct">70%</span>
+                            </div>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-skill="Data Visualization" data-pct="75">
+                            <div class="skill-bar__header"><span>Data Visualization</span><span
+                                    class="skill-bar__pct">60%</span></div>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category: Tools & DB -->
+                <div class="skills__category" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="skills__cat-label"><i class="ph ph-database"></i> Tools & Databases</h3>
+                    <div class="skills__bars">
+                        <div class="skill-bar" data-skill="SQL" data-pct="70">
+                            <div class="skill-bar__header"><span>SQL</span><span class="skill-bar__pct">60%</span></div>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-skill="Excel" data-pct="75">
+                            <div class="skill-bar__header"><span>Excel</span><span class="skill-bar__pct">70%</span>
+                            </div>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-skill="GitHub" data-pct="78">
+                            <div class="skill-bar__header"><span>GitHub</span><span class="skill-bar__pct">70%</span>
+                            </div>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category: Web & AI -->
+                <div class="skills__category" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="skills__cat-label"><i class="ph ph-globe"></i> Web & AI Tools</h3>
+                    <div class="skills__bars">
+                        <div class="skill-bar" data-skill="HTML" data-pct="80">
+                            <div class="skill-bar__header"><span>HTML</span><span class="skill-bar__pct">70%</span>
+                            </div>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-skill="CSS" data-pct="75">
+                            <div class="skill-bar__header"><span>CSS</span><span class="skill-bar__pct">65%</span></div>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-skill="JavaScript" data-pct="65">
+                            <div class="skill-bar__header"><span>JavaScript</span><span
+                                    class="skill-bar__pct">55%</span></div>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-skill="React Basics" data-pct="55">
+                            <div class="skill-bar__header"><span>React Basics</span><span
+                                    class="skill-bar__pct">40%</span></div>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-skill="Node.js Basics" data-pct="50">
+                            <div class="skill-bar__header"><span>Node.js Basics</span><span
+                                    class="skill-bar__pct">35%</span></div>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pill tags for AI tools -->
+                <div class="skills__pills" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="skills__cat-label"><i class="ph ph-robot"></i> AI Tools</h3>
+                    <div class="pills">
+                        <span class="pill">Prompt Engineering</span>
+                        <span class="pill">ChatGPT</span>
+                        <span class="pill">Claude</span>
+                        <span class="pill">Gemini</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===================== EDUCATION ===================== -->
+        <section class="section education" id="education">
+            <div class="container">
+                <div class="section__header" data-aos="fade-up">
+                    <span class="section__tag">03 / Education</span>
+                    <h2 class="section__title">Academic Background</h2>
+                </div>
+                <div class="timeline">
+
+                    <div class="timeline__item" data-aos="fade-up">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__card">
+                            <div class="timeline__icon"><i class="ph ph-graduation-cap"></i></div>
+                            <div class="timeline__content">
+                                <span class="timeline__period">2025 – 2029</span>
+                                <h3 class="timeline__degree">B.Tech CSE (Data Science)</h3>
+                                <p class="timeline__inst">Swami Keshvanand Institute of Technology (SKIT), Jaipur</p>
+                                <div class="timeline__badge">Currently Pursuing</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__card">
+                            <div class="timeline__icon"><i class="ph ph-book-open"></i></div>
+                            <div class="timeline__content">
+                                <span class="timeline__period">Class 12th</span>
+                                <h3 class="timeline__degree">Senior Secondary Education</h3>
+                                <p class="timeline__inst">RBSE Board</p>
+                                <div class="timeline__badge timeline__badge--score">85.60%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__card">
+                            <div class="timeline__icon"><i class="ph ph-pencil-simple"></i></div>
+                            <div class="timeline__content">
+                                <span class="timeline__period">Class 10th</span>
+                                <h3 class="timeline__degree">Secondary Education</h3>
+                                <p class="timeline__inst">RBSE Board</p>
+                                <div class="timeline__badge timeline__badge--score">78.60%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== EXPERIENCE ===================== -->
+        <section class="section experience" id="experience">
+            <div class="container">
+                <div class="section__header" data-aos="fade-up">
+                    <span class="section__tag">04 / Experience</span>
+                    <h2 class="section__title">Work Experience</h2>
+                </div>
+                <div class="exp__grid">
+
+                    <!-- Experience 1 -->
+                    <div class="exp-card" data-aos="fade-up">
+                        <div class="exp-card__header">
+                            <div class="exp-card__icon"><i class="ph ph-chart-bar"></i></div>
+                            <div>
+                                <h3 class="exp-card__title">Data Science Intern</h3>
+                                <p class="exp-card__company">Xylofy AI</p>
+                            </div>
+                            <span class="exp-card__badge">Completed</span>
+                        </div>
+                        <p class="exp-card__period"><i class="ph ph-calendar-blank"></i> April 2026 – May 2026</p>
+                        <ul class="exp-card__list">
+                            <li><i class="ph ph-arrow-right"></i> Built ML models for customer churn prediction</li>
+                            <li><i class="ph ph-arrow-right"></i> Performed EDA and data preprocessing on large datasets
+                            </li>
+                            <li><i class="ph ph-arrow-right"></i> Created visualizations and interactive dashboards</li>
+                            <li><i class="ph ph-arrow-right"></i> Worked with Python, Pandas, NumPy, Scikit-Learn</li>
+                        </ul>
+                        <div class="exp-card__tech">
+                            <span class="tag">Python</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">NumPy</span>
+                            <span class="tag">Scikit-Learn</span>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="exp-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="exp-card__header">
+                            <div class="exp-card__icon"><i class="ph ph-robot"></i></div>
+                            <div>
+                                <h3 class="exp-card__title">AI Web Development Intern</h3>
+                                <p class="exp-card__company">InAmigos Foundation</p>
+                            </div>
+                            <span class="exp-card__badge">Current</span>
+                        </div>
+                        <p class="exp-card__period"><i class="ph ph-calendar-blank"></i> May 2026 – Present</p>
+                        <ul class="exp-card__list">
+                            <li><i class="ph ph-arrow-right"></i> Leveraged AI tools for practical web development tasks
+                            </li>
+                            <li><i class="ph ph-arrow-right"></i> Worked on website enhancement and feature integration
+                            </li>
+                            <li><i class="ph ph-arrow-right"></i> Developed hands-on experience with AI-assisted
+                                development</li>
+                            <li><i class="ph ph-arrow-right"></i> Collaborated with team on real client deliverables
+                            </li>
+                        </ul>
+                        <div class="exp-card__tech">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">AI Tools</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== PROJECTS ===================== -->
+        <section class="section projects" id="projects">
+            <div class="container">
+                <div class="section__header" data-aos="fade-up">
+                    <span class="section__tag">05 / Projects</span>
+                    <h2 class="section__title">Featured Work</h2>
+                </div>
+                <div class="projects__grid">
+
+                    <!-- Project 1 -->
+                    <article class="project-card" data-aos="fade-up">
+                        <div class="project-card__number">01</div>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">Customer Churn Prediction</h3>
+                            <p class="project-card__desc">
+                                Machine learning pipeline to predict customer churn using classification algorithms.
+                                Includes EDA, feature engineering, model training, and evaluation with metrics
+                                dashboards.
+                            </p>
+                            <div class="project-card__tech">
+                                <span class="tag">Python</span>
+                                <span class="tag">Scikit-Learn</span>
+                                <span class="tag">Pandas</span>
+                                <span class="tag">Matplotlib</span>
+                            </div>
+                        </div>
+                        <div class="project-card__footer">
+                            <a href="https://github.com/amitjetwani74-prog/" target="_blank" rel="noopener"
+                                class="btn btn--ghost">
+                                <i class="ph ph-github-logo"></i> GitHub
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-card__number">02</div>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">Financial Fraud Detection</h3>
+                            <p class="project-card__desc">
+                                Explainable AI system for detecting fraudulent financial transactions. Uses SHAP values
+                                for model interpretability, helping stakeholders understand decision logic
+                                transparently.
+                            </p>
+                            <div class="project-card__tech">
+                                <span class="tag">Python</span>
+                                <span class="tag">XGBoost</span>
+                                <span class="tag">SHAP</span>
+                                <span class="tag">Seaborn</span>
+                            </div>
+                        </div>
+                        <div class="project-card__footer">
+                            <a href="https://github.com/amitjetwani74-prog/fraud-detection-dashboard/" target="_blank"
+                                rel="noopener" class="btn btn--ghost">
+                                <i class="ph ph-github-logo"></i> GitHub
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-card__number">03</div>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">Sentiment Analysis on Reviews</h3>
+                            <p class="project-card__desc">
+                                NLP model to classify sentiment in customer reviews as positive, negative, or neutral.
+                                Implemented text preprocessing, TF-IDF vectorization, and VADER sentiment scoring.
+                            </p>
+                            <div class="project-card__tech">
+                                <span class="tag">Python</span>
+                                <span class="tag">NLP</span>
+                                <span class="tag">NLTK</span>
+                                <span class="tag">Scikit-Learn</span>
+                            </div>
+                        </div>
+                        <div class="project-card__footer">
+                            <a href="https://github.com/amitjetwani74-prog/" target="_blank" rel="noopener"
+                                class="btn btn--ghost">
+                                <i class="ph ph-github-logo"></i> GitHub
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-card__number">04</div>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">Mentor Connect Web App</h3>
+                            <p class="project-card__desc">
+                                A full-stack web application bridging students with mentors. Features profile creation,
+                                scheduling, real-time messaging, and a recommendation algorithm for mentor matching.
+                            </p>
+                            <div class="project-card__tech">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Node.js</span>
+                            </div>
+                        </div>
+                        <div class="project-card__footer">
+                            <a href="https://github.com/amitjetwani74-prog/mentor-connect/" target="_blank"
+                                rel="noopener" class="btn btn--ghost">
+                                <i class="ph ph-github-logo"></i> GitHub
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== ACHIEVEMENTS & CERTIFICATIONS ==================== -->
+        <section class="section achievements" id="achievements">
+            <div class="container">
+
+                <div class="section__header" data-aos="fade-up">
+                    <span class="section__tag">06 / Achievements</span>
+                    <h2 class="section__title">Achievements & Certifications</h2>
+                </div>
+
+                <div class="ach__grid">
+
+                    <!-- Smart India Hackathon -->
+                    <a href="assets/certificates/sih-certificate.pdf" target="_blank" class="ach-card"
+                        data-aos="zoom-in">
+
+                        <div class="ach-card__icon">
+                            <i class="ph ph-trophy"></i>
+                        </div>
+
+                        <h3 class="ach-card__title">Smart India Hackathon</h3>
+
+                        <p class="ach-card__desc">
+                            Participated in India's largest national hackathon, working on innovative solutions for
+                            real-world challenges.
+                            <br><br>
+                            <strong>📜 Click to View Certificate</strong>
+                        </p>
+
+                    </a>
+
+                    <!-- Project Expo -->
+                    <a href="assets/certificates/project-expo-certificate.pdf" target="_blank" class="ach-card"
+                        data-aos="zoom-in" data-aos-delay="100">
+
+                        <div class="ach-card__icon">
+                            <i class="ph ph-projector-screen"></i>
+                        </div>
+
+                        <h3 class="ach-card__title">Project Expo</h3>
+
+                        <p class="ach-card__desc">
+                            Presented technical projects and data-driven solutions at a project exhibition, showcasing
+                            problem-solving and analytical skills.
+                            <br><br>
+                            <strong>📜 Click to View Certificate</strong>
+                        </p>
+
+                    </a>
+
+                    <!-- Certificate of xylofy ai -->
+                    <div class="ach-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="ach-card__icon">
+                            <i class="ph ph-chart-line-up"></i>
+                        </div>
+
+                        <h3 class="ach-card__title">Data Science Internship</h3>
+
+                        <p class="ach-card__desc">
+                            Successfully completed a Data Science Internship at Xylofy AI, working on machine learning,
+                            data preprocessing, analytics, and visualization projects.
+                            <br><br>
+                            <strong>📜 Certificate Awaited</strong>
+                        </p>
+                    </div>
+
+                    <!-- AI Web Development Internship -->
+                    <div class="ach-card" data-aos="zoom-in" data-aos-delay="300">
+    <div class="ach-card__icon">
+        <i class="ph ph-robot"></i>
+    </div>
+
+    <h3 class="ach-card__title">AI Web Development Internship</h3>
+
+    <p class="ach-card__desc">
+        Currently working as an AI Web Development Intern at InAmigos Foundation through Internshala, building AI-assisted web solutions and modern portfolio websites.
+        <br><br>
+        <strong>🚀 Ongoing Internship</strong>
+    </p>
+</div>
+
+        <!-- ===================== CONTACT ===================== -->
+        <section class="section contact" id="contact">
+            <div class="container">
+                <div class="section__header" data-aos="fade-up">
+                    <span class="section__tag">07 / Contact</span>
+                    <h2 class="section__title">Get In Touch</h2>
+                </div>
+                <div class="contact__grid">
+
+                    <div class="contact__info" data-aos="fade-right">
+                        <p class="contact__intro">
+                            I'm always open to discussing new opportunities, interesting projects,
+                            or just a quick chat about data science. Reach out — I'll get back to you soon!
+                        </p>
+
+                        <div class="contact__details">
+                            <a href="mailto:kamaljetwani100@gmail.com" class="contact__detail-item">
+                                <div class="contact__detail-icon"><i class="ph ph-envelope"></i></div>
+                                <div>
+                                    <span class="contact__detail-label">Email</span>
+                                    <span class="contact__detail-val">kamaljetwani100@gmail.com</span>
+                                </div>
+                            </a>
+                            <div class="contact__detail-item">
+                                <div class="contact__detail-icon"><i class="ph ph-map-pin"></i></div>
+                                <div>
+                                    <span class="contact__detail-label">Location</span>
+                                    <span class="contact__detail-val">Jaipur, Rajasthan, India</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact__socials">
+                            <a href="https://www.linkedin.com/in/kamal-jetwani-310bb7397/" target="_blank" rel="noopener" class="btn btn--primary">
+                                <i class="ph ph-linkedin-logo"></i> LinkedIn
+                            </a>
+                            <a href="https://github.com/amitjetwani74-prog/" target="_blank" rel="noopener" class="btn btn--outline">
+                                <i class="ph ph-github-logo"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="contact__form" action="https://api.web3forms.com/submit" method="POST" data-aos="fade-left">
+
+    <input type="hidden" name="access_key" value="12f7528b-e22c-4a2f-b6c5-c306ab0413f6">
+
+    <input type="hidden" name="subject" value="New Message From Portfolio Website">
+
+    <input type="hidden" name="from_name" value="Kamal Jetwani Portfolio">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="user_subject" placeholder="Project Collaboration" />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">
+                            <i class="ph ph-paper-plane-tilt"></i> Send Message
+                        </button>
+                        <button type="submit" class="btn btn--primary btn--full">
+                        <i class="ph ph-paper-plane-tilt"></i> Send Message
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <a href="#hero" class="footer__logo">KJ<span class="dot">.</span></a>
+            <p class="footer__copy">© 2026 Kamal Jetwani. All rights reserved.</p>
+            <div class="footer__socials">
+                <a href="https://github.com/amitjetwani74-prog" target="_blank" rel="noopener" aria-label="GitHub"><i
+                        class="ph ph-github-logo"></i></a>
+                <a href="https://www.linkedin.com/in/kamal-jetwani-310bb7397/" target="_blank" rel="noopener" aria-label="LinkedIn"><i
+                        class="ph ph-linkedin-logo"></i></a>
+                <a href="mailto:kamaljetwani100@gmail.com" aria-label="Email"><i class="ph ph-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-top" id="backTop" aria-label="Back to top">
+        <i class="ph ph-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
