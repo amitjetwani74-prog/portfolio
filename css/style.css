@@ -1055,7 +1055,7 @@ h1,h2,h3,h4 {
 /* ── ACHIEVEMENTS ─────────────────────────────────────────── */
 .ach__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
 }
 
@@ -1063,9 +1063,14 @@ h1,h2,h3,h4 {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 2rem 1.5rem;
+  padding: 2rem;
   text-align: center;
   transition: all var(--transition);
+
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .ach-card:hover {
