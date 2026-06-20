@@ -719,7 +719,7 @@ h1,h2,h3,h4 {
   gap: 1rem 3rem;
 }
 
-.skill-bar { }
+/* .skill-bar { } */
 
 .skill-bar__header {
   display: flex;
